@@ -19,31 +19,33 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+       
+       
+       
       }
 
       body {
         height: 100vh;
-        
-        
-        
-      }
-      .contenedor {
-        width: 336px;
-        height: 266px;
-        display: flex;
+        display:flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(243, 244, 246);
-        border: 16px solid rgb(255, 255, 255);
-        border-radius: 16px;
+        justify-content: center;  
+        align-items: center;}
+
+
+      .contenedor {        
+        width: 368px;
+        height: auto;     
+        
+        background-color: white;
+        border: 16px solid white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+        
       }
       .contenedor img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 16px 16px 0 0;
-      }
+        width: 100%; 
+        border-radius: 10px; }   
       .contenedor h1 {
         font-size: 24px;
         font-weight: 600;
@@ -52,30 +54,63 @@
       }
       .contenedor p {
         font-size: 16px;
+        font-weight: 600;
         color: rgb(107, 114, 128);
-        text-align: center;
-        margin: 0 16px;
+        text-align:justify;
+        margin:16px 0;
       }
-      
-
-        
-        
-      
-      
-        
-      
-      
-      
-
+      .contenedor p:last-child {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(75, 85, 99);
+        margin-top: 8px;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid #f996e5;
+        margin: 20px 0;
+      }
       .author-info {
         font-size: 14px;
         text-align: center;
         margin-top: 16px;
         color: rgb(55, 65, 81);
       }
-
       .author-info a {
         text-decoration: none;
+      }
+      @media (min-width: 1350px) {
+        body {
+          background-color: #f3f4f6;
+        }
+        .contenedor {
+          width: 368px;
+          height: auto; 
+        }
+      }
+      @media (max-width: 1024px) {
+        body {
+          background-color: #f3f4f6;
+        }
+        .contenedor {
+          width: 368px;
+          height: auto; 
+        }
+        .contenedor img {
+          width: 100%;
+        }
+      }
+      @media (max-width: 412px){
+        body {
+          background-color: #f3f4f6;
+        }
+        .contenedor {
+          width: 368px;
+          height: auto; 
+        }
+        .contenedor img {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -84,22 +119,15 @@
       <img src="resources\Cactus.jpg" alt="Cactus" />
       <h1>Embracing Minimalism</h1>
       <p>From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.</p>
-      <p>Annie Spratt --></p>
+      <hr>
+      <p>Annie Spratt ></p>
 
     </div>
-    <!-- Design
-
-  
-
-  
-
-  Annie Spratt -->
+   
 
     <div class="author-info">
       Coded by <a href="#">Sebastian Rico A</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
+      <a rel="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>
     </div>
   </body>
 </html>
